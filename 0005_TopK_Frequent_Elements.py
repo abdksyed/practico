@@ -47,8 +47,8 @@ class Solution:
         # When we have small k, max heap is not efficient
         # We can use a min heap to get the top k elements when k << m
         # We only need to do smaller, logK, instead of much large, logM operations
-        # T -> O(n + mlogk) (better than n + klogm) when k << m
-        # S -> O(k)
+        # T -> O(n + mlogk)
+        # S -> O(k) (since min heap only stores top k elements, where as max heap stores all unique elements)
         from collections import Counter
         import heapq
         freq = Counter(nums)
