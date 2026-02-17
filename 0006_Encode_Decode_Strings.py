@@ -40,6 +40,10 @@
 # Input: dummy_input = [""]
 # Output: [""]
 
+# T -> O(m)
+# S -> O(n+m)
+# m -> sum length of all strins, n -> number of strings
+
 class Solution:
     def encode(self, strs: list[str]) -> str:
         result = ""
